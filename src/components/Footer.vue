@@ -22,8 +22,7 @@ import MenuIcon from "./MenuIcon";
 
 export default {
   name: 'Footer',
-  components: {MenuIcon},
-  comments: { MenuIcon },
+  components: { MenuIcon },
   data: ()=>{
       return {
         iconColor1: "#D8E2FF",

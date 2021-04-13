@@ -3,9 +3,12 @@
   <div id="app">
     <div id="header">
       <div class="mt-10" id="title">最適スケジュール</div>
-      <v-icon dark id="icon">
-        settings
-      </v-icon>
+      <v-btn icon id="icon" dark>
+        <v-icon>
+          settings
+        </v-icon>
+      </v-btn>
+
     </div>
 
     <v-container>
@@ -43,11 +46,12 @@
                 style="color: #AEB9D6;
                        background-color: #4B5771;
                        border-color: #4B5771;
+                       padding-left: 0;
                        padding-right: 0;
                        float: right;
                        right: 5%">
                 <v-icon dark small>format_list_bulleted</v-icon>
-                <div style="font-size: 1rem">一覧を表示</div>
+                <div style="font-size: 1rem;">一覧を表示</div>
               </v-btn>
             </v-col>
           </v-row>
@@ -118,9 +122,9 @@ export default {
 #title {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-top: 1%;
+  padding-top: 2%;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 3%;
   margin-bottom: 5%;
 }
 #header {

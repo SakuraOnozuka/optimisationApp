@@ -4,16 +4,17 @@
           class="mx-auto"
           outlined
           style="background-color: #ECF0F7;
-                 padding: 3%;
+                 padding: 2% 2% 4% 2%;
                  margin: 4% 0%;
                  border-radius: 3%"
       >
-        <v-card-text>
+        <v-card-text style="padding-bottom: 0">
           <v-row
-            style="font-size: 1.1rem;
+            style="font-size: 1rem;
                    font-weight: 900;
                    color:black;"
-          class="font">{{title}}</v-row>
+            class="font"
+          >{{title}}</v-row>
           <v-row>
             <v-icon
                 x-small
@@ -21,7 +22,7 @@
                 >circle</v-icon>
             <div
               style="color: black;
-                     font-size: 1rem;
+                     font-size: 0.9rem;
                      font-family: Tahoma;
                      font-weight: 500">
               {{name}}
@@ -31,10 +32,10 @@
           <v-col class="col-5">
             <v-progress-circular
                 :rotate="-90"
-                :size="size()"
-                :width="width()"
+                :width="width"
                 :value="ratio"
                 color="#7C7BFF"
+                :size="size"
             >
               <div class="font-for-number">{{ message }}</div>
             </v-progress-circular>
@@ -44,14 +45,16 @@
               class="col-7"
           >
             <v-row
-                style="margin-top: auto;
+                style="padding-right: 12%;
+                       margin-top: auto;
                        margin-bottom: auto;">
               <v-col
                   class="col-7"
-                  style="font-size: 1rem;
+                  style="font-size: 0.94rem;
+                         font-family: ＭＳ Ｐゴシック;
                          font-weight: 100;
-                         color: #A3B0C7;
-                         padding-top: 10%">
+                         line-height: 1.8;
+                         color: #A3B0C7;">
                 歯具連番 <br>
                 残カウント <br>
                 交換時刻
@@ -61,8 +64,8 @@
               style="color: black;
                      padding-left: 0;
                      font-size: 1rem;
-                     font-weight: 500;
-                     padding-top: 10%">
+                     line-height: 1.7;
+                     font-weight: 500;">
             {{number}}<br>
             {{count}}<br>
             {{time}}
@@ -144,11 +147,11 @@
         default: false
       }
     },
-    methods:{
-      size(){
+    computed:{
+      size: function (){
         return document.body.clientWidth/4.5;
       },
-      width(){
+      width: function (){
         return document.body.clientWidth/80;
       }
     }
@@ -159,7 +162,7 @@
   color: black;
   font-family: arial;
   font-weight: 500;
-  font-size:1.6rem
+  font-size:1.5rem
 }
 .font {
   font-family: "ＭＳ Ｐゴシック"

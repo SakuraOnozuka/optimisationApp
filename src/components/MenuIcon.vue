@@ -7,7 +7,8 @@
     </v-btn>
     <div
         style="text-align:center;
-               font-size: 1rem;"
+               transform: rotate(0.1deg);
+               font-size: 0.7rem;"
         :style="{ color: color }">{{iconTitle}}</div>
    </div>
 </template>
