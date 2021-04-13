@@ -7,7 +7,7 @@
     </v-btn>
     <div
         style="text-align:center;
-                font-size: 0.7rem;"
+               font-size: 1rem;"
         :style="{ color: color }">{{iconTitle}}</div>
    </div>
 </template>
@@ -24,8 +24,8 @@ export default {
     },
     color: {
       type: String,
-      required: true,
-      default: "#D8E2FF"
+      required: false,
+      default: "#6B78A0"
     },
     iconTitle: {
       type: String,

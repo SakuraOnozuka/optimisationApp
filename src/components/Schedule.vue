@@ -10,9 +10,10 @@
       >
         <v-card-text>
           <v-row
-            style="font-size: 1rem;
-                   font-weight: bold;
-                   color:black;">{{title}}</v-row>
+            style="font-size: 1.1rem;
+                   font-weight: 900;
+                   color:black;"
+          class="font">{{title}}</v-row>
           <v-row>
             <v-icon
                 x-small
@@ -20,7 +21,9 @@
                 >circle</v-icon>
             <div
               style="color: black;
-                      font-size: 1rem">
+                     font-size: 1rem;
+                     font-family: Tahoma;
+                     font-weight: 500">
               {{name}}
             </div>
           </v-row>
@@ -31,33 +34,35 @@
                 :size="size()"
                 :width="width()"
                 :value="ratio"
-                color="#96AAEF"
+                color="#7C7BFF"
             >
-              <div style="color: black;
-                          font-weight: 500;
-                          font-size:1.3rem">{{ message }}</div>
+              <div class="font-for-number">{{ message }}</div>
             </v-progress-circular>
           </v-col>
 
           <v-col
               class="col-7"
           >
-            <v-row>
+            <v-row
+                style="margin-top: auto;
+                       margin-bottom: auto;">
               <v-col
                   class="col-7"
                   style="font-size: 1rem;
-                         font-weight: 200;
-                         color: #A3B0C7">
+                         font-weight: 100;
+                         color: #A3B0C7;
+                         padding-top: 10%">
                 歯具連番 <br>
                 残カウント <br>
                 交換時刻
               </v-col>
           <v-col
-              class="col-5"
+              class="col-5 font-for-number"
               style="color: black;
                      padding-left: 0;
                      font-size: 1rem;
-                     font-weight: 550">
+                     font-weight: 500;
+                     padding-top: 10%">
             {{number}}<br>
             {{count}}<br>
             {{time}}
@@ -75,9 +80,12 @@
                      color: #FFFFFF;
                      height: 3rem;"
           >
-            <v-icon dark>done</v-icon>
-              <div style="font-weight: bolder;
-                          font-size: 1rem;"
+            <v-icon
+                style="font-weight: 900;
+                          font-size: 1.1rem;"
+                dark>done</v-icon>
+              <div style="font-weight: 900;
+                          font-size: 1.1rem;"
               >作業を完了</div>
           </v-btn>
         </v-card-actions>
@@ -138,14 +146,22 @@
     },
     methods:{
       size(){
-        return window.innerWidth/4;
+        return document.body.clientWidth/4.5;
       },
       width(){
-        return window.innerWidth/80;
+        return document.body.clientWidth/80;
       }
     }
   }
 </script>
 <style scoped>
-
+.font-for-number {
+  color: black;
+  font-family: arial;
+  font-weight: 500;
+  font-size:1.6rem
+}
+.font {
+  font-family: "ＭＳ Ｐゴシック"
+}
 </style>

@@ -83,8 +83,8 @@ export default {
   },
   data: ()=>{
     return {
-      name1:"1B ABCD123",
-      name2: "1C EFGH123",
+      name1:"1B　ABCD123",
+      name2: "1C　EFGH123",
       message1: "10:09",
       message2: "11:49",
       time1: "18:59:59",
@@ -112,7 +112,8 @@ export default {
   padding-right: 3%;
   padding-left: 3%;
   height: 100vh;
-  font-family: "ＭＳ ゴシック";
+  font-family: "ＭＳ Ｐゴシック";
+  font-size: 1.1rem;
 }
 #title {
   -webkit-font-smoothing: antialiased;

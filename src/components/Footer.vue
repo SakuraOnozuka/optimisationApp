@@ -9,7 +9,6 @@
         </v-col>
         <v-col class="col-6">
           <menu-icon
-              :color="iconColor2"
               :iconTitle="iconTitle2"
               :iconName="iconName2"></menu-icon>
         </v-col>
@@ -28,7 +27,6 @@ export default {
   data: ()=>{
       return {
         iconColor1: "#D8E2FF",
-        iconColor2: "#6B78A0",
         iconTitle1: "最適スケジュール",
         iconTitle2: "マップ",
         iconName1: "format_list_bulleted",
