@@ -15,7 +15,7 @@
       <v-row dense>
         <v-col cols="12">
           <div>現在の作業</div>
-          <Schedule
+          <TaskCard
           :name="name1"
           :ratio="ratio1"
           :message="message1"
@@ -25,7 +25,7 @@
           :title="title1"
           :show="true"
           :color="color1"
-          ></Schedule>
+          ></TaskCard>
           <br>
           <v-row>
             <v-col
@@ -55,7 +55,7 @@
               </v-btn>
             </v-col>
           </v-row>
-          <Schedule
+          <TaskCard
               :name="name2"
               :ratio="ratio2"
               :message="message2"
@@ -64,7 +64,7 @@
               :time="time2"
               :title="title2"
               :color="color2"
-          ></Schedule>
+          ></TaskCard>
         </v-col>
       </v-row>
       <v-row>
@@ -76,13 +76,13 @@
 </template>
 
 <script>
-import Schedule from './components/Schedule.vue'
+import TaskCard from './components/TaskCard.vue'
 import Footer from "./components/Footer";
 
 export default {
   name: 'App',
   components: {
-    Schedule,
+    TaskCard,
     Footer
   },
   data: ()=>{
@@ -125,7 +125,8 @@ export default {
   padding-top: 2%;
   text-align: center;
   margin-top: 3%;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
+  font-size: 1.25rem;
 }
 #header {
   position: relative;

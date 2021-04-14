@@ -8,7 +8,10 @@
                  margin: 4% 0%;
                  border-radius: 3%"
       >
-        <v-card-text style="padding-bottom: 0">
+        <v-card-text
+            style="padding-bottom: 0;
+            padding-left: 7%;
+            padding-right: 0">
           <v-row
             style="font-size: 1rem;
                    font-weight: 900;
@@ -29,7 +32,7 @@
             </div>
           </v-row>
         <v-row>
-          <v-col class="col-5">
+          <v-col class="col-4">
             <v-progress-circular
                 :rotate="-90"
                 :width="width"
@@ -40,7 +43,7 @@
               <div class="font-for-number">{{ message }}</div>
             </v-progress-circular>
           </v-col>
-
+          <v-col cols="1"></v-col>
           <v-col
               class="col-7"
           >
@@ -50,10 +53,11 @@
                        margin-bottom: auto;">
               <v-col
                   class="col-7"
-                  style="font-size: 0.94rem;
+                  style="font-size: 0.9rem;
+                         transform: rotate(0.1deg);
                          font-family: ＭＳ Ｐゴシック;
                          font-weight: 100;
-                         line-height: 1.8;
+                         line-height: 1.87;
                          color: #A3B0C7;">
                 歯具連番 <br>
                 残カウント <br>
@@ -99,7 +103,7 @@
 
 <script>
   export default {
-    name: 'Schedule',
+    name: 'TaskCard',
     props: {
       name: {
         type: String,
@@ -149,7 +153,7 @@
     },
     computed:{
       size: function (){
-        return document.body.clientWidth/4.5;
+        return document.body.clientWidth/4.1;
       },
       width: function (){
         return document.body.clientWidth/80;
