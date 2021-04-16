@@ -6,15 +6,12 @@
       </v-icon>
     </v-btn>
     <div
-        style="text-align:center;
-               transform: rotate(0.1deg);
-               font-size: 0.7rem;"
+        class="icon-title"
         :style="{ color: color }">{{iconTitle}}</div>
    </div>
 </template>
 
 <script>
-
 export default {
   name: 'MenuIcon',
   props: {
@@ -38,4 +35,9 @@ export default {
 </script>
 
 <style scoped>
+.icon-title {
+  text-align:center;
+  transform: rotate(0.1deg);
+  font-size: 0.7rem;
+}
 </style>
