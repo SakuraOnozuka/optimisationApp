@@ -1,5 +1,5 @@
 <template>
-
+<div>
   <div id="app">
     <div id="header">
       <div class="mt-10" id="title">最適スケジュール</div>
@@ -67,12 +67,12 @@
           ></TaskCard>
         </v-col>
       </v-row>
-      <v-row>
-        <Footer></Footer>
-      </v-row>
     </v-container>
+  </div>
+    <v-footer id="footer">
+      <Footer></Footer>
+    </v-footer>
 </div>
-
 </template>
 
 <script>
@@ -115,7 +115,8 @@ export default {
   padding-top: 2%;
   padding-right: 3%;
   padding-left: 3%;
-  height: 100vh;
+  margin-left: 0;
+  height: max(100%, 50vh);
   font-family: "ＭＳ Ｐゴシック";
   font-size: 1.1rem;
 }
@@ -136,5 +137,9 @@ export default {
   position: absolute;
   top: 0;
   right: 5%;
+}
+#footer {
+  margin-left: -3%;
+  width: content-box;
 }
 </style>

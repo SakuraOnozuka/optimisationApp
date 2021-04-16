@@ -39,11 +39,12 @@ export default {
 #footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 106%;
   text-align: center;
   background-color: #364057;
   padding-top: 1%;
   padding-bottom: 3%;
   margin-left: -3%;
+  margin-right: -3%;
 }
 </style>
